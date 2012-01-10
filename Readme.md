@@ -1,12 +1,18 @@
 # node.extend
 
-  Port of jQuery.extend that **actually works** on node.js
+Port of jQuery.extend that **actually works** on node.js
 
 
 
 ## Description
 
-  None of the existing ones on npm really works therefore I have to port it myself.
+None of the existing ones on npm really work therefore I ported it myself.
+
+
+
+## Usage
+
+Checkout the doc from [jQuery](http://api.jquery.com/jQuery.extend/)
 
 
 
