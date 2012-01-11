@@ -1,3 +1,9 @@
+## 0.0.2 / 2012-01-11
+
+  - Add repository to package.json
+
+
+
 ## 0.0.1 / 2012-01-10
 
   - Initial release
