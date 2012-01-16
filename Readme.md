@@ -1,6 +1,6 @@
 # node.extend
 
-Port of jQuery.extend that **actually works** on node.js
+A port of jQuery.extend that **actually works** on node.js
 
 
 
