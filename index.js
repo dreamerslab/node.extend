@@ -1,1 +1,1 @@
-module.exports = require( './lib/node.extend' );
+module.exports = require( './lib/extend' );
