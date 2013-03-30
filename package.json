@@ -13,6 +13,9 @@
     "url" : "https://github.com/dreamerslab/node.extend.git"
   },
   "main"    : "index",
+  "scripts" : {
+    "test"    : "node test/run.js"
+  },
   "engines" : [ "node >= 0.4.0" ],
   "licenses": [{
     "type": "MIT",
@@ -22,3 +25,4 @@
     "url" : "http://en.wikipedia.org/wiki/GNU_General_Public_License"
   }]
 }
+
