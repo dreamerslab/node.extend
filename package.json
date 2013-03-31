@@ -6,7 +6,7 @@
   "author"      : "dreamerslab <ben@dreamerslab.com>",
   "dependencies": {},
   "devDependencies": {
-    "should": "0.5.1"
+    "should": "1.2.2"
   },
   "repository"  : {
     "type": "git",
