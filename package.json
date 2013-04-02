@@ -1,6 +1,6 @@
 {
   "name"        : "node.extend",
-  "version"     : "1.0.0",
+  "version"     : "1.0.1",
   "description" : "A port of jQuery.extend that actually works on node.js",
   "keywords"    : [ "extend", "jQuery", "jQuery extend", "clone", "copy", "inherit" ],
   "author"      : "dreamerslab <ben@dreamerslab.com>",
@@ -12,6 +12,9 @@
     "type": "git",
     "url" : "https://github.com/dreamerslab/node.extend.git"
   },
+  "contributors": [
+    { "name": "Jordan Harband", "twitter": "https://twitter.com/ljharb" },
+  ],
   "main"    : "index",
   "scripts" : {
     "test"    : "node test/run.js"

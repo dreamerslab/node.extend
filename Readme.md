@@ -16,6 +16,12 @@ Checkout the doc from [jQuery](http://api.jquery.com/jQuery.extend/)
 
 
 
+## Credit
+
+- Jordan Harband <https://twitter.com/ljharb>
+
+
+
 ## License
 
 Copyright 2011, John Resig
