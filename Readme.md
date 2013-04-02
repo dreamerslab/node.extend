@@ -2,6 +2,7 @@
 
 A port of jQuery.extend that **actually works** on node.js
 
+[![browser support](https://ci.testling.com/dreamerslab/node.extend.png)](https://ci.testling.com/dreamerslab/node.extend)
 
 
 ## Description
