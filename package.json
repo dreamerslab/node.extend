@@ -13,7 +13,7 @@
     "url" : "https://github.com/dreamerslab/node.extend.git"
   },
   "contributors": [
-    { "name": "Jordan Harband", "twitter": "https://twitter.com/ljharb" },
+    { "name": "Jordan Harband", "twitter": "https://twitter.com/ljharb" }
   ],
   "main"    : "index",
   "scripts" : {
