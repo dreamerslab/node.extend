@@ -20,6 +20,23 @@
     "test"    : "node test/run.js"
   },
   "engines" : [ "node >= 0.4.0" ],
+  "testling": {
+    "files": "index.js",
+    "browsers": [
+      "iexplore/6.0..latest",
+      "firefox/3.0",
+      "firefox/15.0..latest",
+      "firefox/nightly",
+      "chrome/4.0",
+      "chrome/22.0..latest",
+      "chrome/canary",
+      "opera/10.0..latest",
+      "opera/next",
+      "safari/5.0.5..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest"
+    ]
+  },
   "licenses": [{
     "type": "MIT",
     "url" : "http://en.wikipedia.org/wiki/MIT_License"
