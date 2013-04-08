@@ -1,7 +1,9 @@
 var tests = require( './extend' );
+var keys = require('object-keys');
 
-Object.keys( tests ).forEach( function( test ){
-  tests[ test ]();
-});
+var testKeys = keys(tests);
+for (var i = 0; i < testKeys.length; ++i) {
+  tests[i]();
+}
 
 console.log( 'All tests passed :)' );
