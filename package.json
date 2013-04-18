@@ -1,6 +1,6 @@
 {
   "name"        : "node.extend",
-  "version"     : "1.0.4",
+  "version"     : "1.0.5",
   "description" : "A port of jQuery.extend that actually works on node.js",
   "keywords"    : [ "extend", "jQuery", "jQuery extend", "clone", "copy", "inherit" ],
   "author"      : "dreamerslab <ben@dreamerslab.com>",
