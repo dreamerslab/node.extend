@@ -1,14 +1,14 @@
 {
   "name"        : "node.extend",
-  "version"     : "1.0.3",
+  "version"     : "1.0.4",
   "description" : "A port of jQuery.extend that actually works on node.js",
   "keywords"    : [ "extend", "jQuery", "jQuery extend", "clone", "copy", "inherit" ],
   "author"      : "dreamerslab <ben@dreamerslab.com>",
   "dependencies": {
-    "object-keys": "~0.1.4"
+    "object-keys": "~0.1.7"
   },
   "devDependencies": {
-    "tape": "0.3.3"
+    "tape": "~0.3.3"
   },
   "repository"  : {
     "type": "git",
