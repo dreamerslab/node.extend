@@ -1,5 +1,5 @@
 var extend = require('../lib/extend');
-var test = require('tape');
+var test = require('tap').test;
 
 var str = 'me a test';
 var int = 10;
