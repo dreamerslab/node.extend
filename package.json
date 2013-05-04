@@ -9,7 +9,7 @@
     "object-keys": "~0.1.7"
   },
   "devDependencies": {
-    "tap": "~0.4.1"
+    "tape": "~1.0.1"
   },
   "repository"  : {
     "type": "git",
