@@ -5,7 +5,7 @@
   "keywords"    : [ "extend", "jQuery", "jQuery extend", "clone", "copy", "inherit" ],
   "author"      : "dreamerslab <ben@dreamerslab.com>",
   "dependencies": {
-    "is": "~0.2.4",
+    "is": "~0.2.5",
     "object-keys": "~0.1.7"
   },
   "devDependencies": {
