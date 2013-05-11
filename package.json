@@ -24,7 +24,7 @@
   },
   "engines" : [ "node >= 0.4.0" ],
   "testling": {
-    "files": "index.js",
+    "files": "test/index.js",
     "browsers": [
       "iexplore/6.0..latest",
       "firefox/3.0..6.0",
