@@ -31,7 +31,7 @@ var deep = {
 
 
 test('.version', function (t) {
-  t.true((/^\d+\.\d+\.\d+$/).test(extend.version), 'version is valid');
+  t.ok((/^\d+\.\d+\.\d+$/).test(extend.version), 'version is valid');
   t.end();
 });
 
