@@ -540,7 +540,7 @@ test('deep clone', function (t) {
   t.end();
 });
 
-test('deep clone; arrays are merged', function(t) {
+test('deep clone; arrays are merged', function (t) {
   var defaults = {
     arr: [1, 2, 3]
   };
