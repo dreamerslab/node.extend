@@ -1,27 +1,27 @@
 {
-  "name"        : "node.extend",
-  "version"     : "1.0.8",
-  "description" : "A port of jQuery.extend that actually works on node.js",
-  "keywords"    : [ "extend", "jQuery", "jQuery extend", "clone", "copy", "inherit" ],
-  "author"      : "dreamerslab <ben@dreamerslab.com>",
+  "name": "node.extend",
+  "version": "1.0.8",
+  "description": "A port of jQuery.extend that actually works on node.js",
+  "keywords": ["extend", "jQuery", "jQuery extend", "clone", "copy", "inherit"],
+  "author": "dreamerslab <ben@dreamerslab.com>",
   "dependencies": {
     "is": "~0.2.7"
   },
   "devDependencies": {
     "tape": "~2.3.2"
   },
-  "repository"  : {
+  "repository": {
     "type": "git",
-    "url" : "https://github.com/dreamerslab/node.extend.git"
+    "url": "https://github.com/dreamerslab/node.extend.git"
   },
   "contributors": [
     { "name": "Jordan Harband", "twitter": "https://twitter.com/ljharb" }
   ],
-  "main"    : "index",
-  "scripts" : {
-    "test"    : "node test/index.js"
+  "main": "index",
+  "scripts": {
+    "test": "node test/index.js"
   },
-  "engines" : [ "node >= 0.4.0" ],
+  "engines": ["node >= 0.4.0"],
   "testling": {
     "files": "test/index.js",
     "browsers": [
