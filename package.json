@@ -8,7 +8,8 @@
     "is": "~0.3.0"
   },
   "devDependencies": {
-    "tape": "~2.10.2"
+    "tape": "~2.10.2",
+    "covert": "~0.3.1"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
   ],
   "main": "index",
   "scripts": {
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "coverage": "covert test/index.js",
+    "coverage-quiet": "covert test/index.js --quiet"
   },
   "engines": ["node >= 0.4"],
   "testling": {
