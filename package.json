@@ -1,6 +1,6 @@
 {
   "name": "node.extend",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A port of jQuery.extend that actually works on node.js",
   "keywords": ["extend", "jQuery", "jQuery extend", "clone", "copy", "inherit"],
   "author": "dreamerslab <ben@dreamerslab.com>",
@@ -21,7 +21,7 @@
   "scripts": {
     "test": "node test/index.js"
   },
-  "engines": ["node >= 0.4.0"],
+  "engines": ["node >= 0.4"],
   "testling": {
     "files": "test/index.js",
     "browsers": [
