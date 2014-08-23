@@ -62,11 +62,11 @@ Copyright 2011, John Resig
 Dual licensed under the MIT or GPL Version 2 licenses.
 http://jquery.org/license
 
-[1]: https://ci.testling.com/dreamerslab/node.extend.png
+[1]: https://ci.testling.com/dreamerslab/node.extend.svg
 [2]: https://ci.testling.com/dreamerslab/node.extend
-[3]: https://travis-ci.org/dreamerslab/node.extend.png
+[3]: https://travis-ci.org/dreamerslab/node.extend.svg
 [4]: https://travis-ci.org/dreamerslab/node.extend
-[5]: https://david-dm.org/dreamerslab/node.extend.png
+[5]: https://david-dm.org/dreamerslab/node.extend.svg
 [6]: https://david-dm.org/dreamerslab/node.extend
 [jQuery]: http://api.jquery.com/jQuery.extend/
 [@ljharb]: https://twitter.com/ljharb
