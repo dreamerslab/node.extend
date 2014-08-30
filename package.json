@@ -2,7 +2,14 @@
   "name": "node.extend",
   "version": "1.1.2",
   "description": "A port of jQuery.extend that actually works on node.js",
-  "keywords": ["extend", "jQuery", "jQuery extend", "clone", "copy", "inherit"],
+  "keywords": [
+    "extend",
+    "jQuery",
+    "jQuery extend",
+    "clone",
+    "copy",
+    "inherit"
+  ],
   "author": "dreamerslab <ben@dreamerslab.com>",
   "dependencies": {
     "is": "~2.0.0"
@@ -10,14 +17,17 @@
   "devDependencies": {
     "tape": "~2.14.0",
     "covert": "~1.0.0",
-    "jscs": "~1.5.9"
+    "jscs": "~1.6.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/dreamerslab/node.extend.git"
   },
   "contributors": [
-    { "name": "Jordan Harband", "twitter": "https://twitter.com/ljharb" }
+    {
+      "name": "Jordan Harband",
+      "twitter": "https://twitter.com/ljharb"
+    }
   ],
   "main": "index",
   "scripts": {
@@ -26,7 +36,9 @@
     "coverage-quiet": "covert test/index.js --quiet",
     "lint": "jscs *.js */*.js"
   },
-  "engines": ["node >= 0.4"],
+  "engines": [
+    "node >= 0.4"
+  ],
   "testling": {
     "files": "test/index.js",
     "browsers": [
@@ -44,12 +56,15 @@
       "iphone/6.0..latest"
     ]
   },
-  "licenses": [{
-    "type": "MIT",
-    "url" : "http://en.wikipedia.org/wiki/MIT_License"
-  }, {
-    "type": "GPL",
-    "url" : "http://en.wikipedia.org/wiki/GNU_General_Public_License"
-  }]
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://en.wikipedia.org/wiki/MIT_License"
+    },
+    {
+      "type": "GPL",
+      "url": "http://en.wikipedia.org/wiki/GNU_General_Public_License"
+    }
+  ]
 }
 
