@@ -12,7 +12,7 @@
   ],
   "author": "dreamerslab <ben@dreamerslab.com>",
   "dependencies": {
-    "is": "~2.0.0"
+    "is": "~2.0.1"
   },
   "devDependencies": {
     "tape": "~2.14.0",
