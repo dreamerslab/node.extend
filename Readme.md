@@ -2,7 +2,8 @@
 
 A port of jQuery.extend that **actually works** on node.js
 
-[![Build Status][3]][4] [![dependency status][5]][6]
+[![Build Status][travis-svg]][travis-url]
+[![dependency status][5]][6]
 
 [![browser support][testling-png]][testling-url]
 
@@ -64,8 +65,8 @@ http://jquery.org/license
 
 [testling-png]: https://ci.testling.com/dreamerslab/node.extend.png
 [testling-url]: https://ci.testling.com/dreamerslab/node.extend
-[3]: https://travis-ci.org/dreamerslab/node.extend.svg
-[4]: https://travis-ci.org/dreamerslab/node.extend
+[travis-svg]: https://travis-ci.org/dreamerslab/node.extend.svg
+[travis-url]: https://travis-ci.org/dreamerslab/node.extend
 [5]: https://david-dm.org/dreamerslab/node.extend.svg
 [6]: https://david-dm.org/dreamerslab/node.extend
 [jQuery]: http://api.jquery.com/jQuery.extend/
