@@ -4,7 +4,7 @@ A port of jQuery.extend that **actually works** on node.js
 
 [![Build Status][3]][4] [![dependency status][5]][6]
 
-[![browser support][1]][2]
+[![browser support][testling-png]][testling-url]
 
 
 ## Description
@@ -62,8 +62,8 @@ Copyright 2011, John Resig
 Dual licensed under the MIT or GPL Version 2 licenses.
 http://jquery.org/license
 
-[1]: https://ci.testling.com/dreamerslab/node.extend.svg
-[2]: https://ci.testling.com/dreamerslab/node.extend
+[testling-png]: https://ci.testling.com/dreamerslab/node.extend.png
+[testling-url]: https://ci.testling.com/dreamerslab/node.extend
 [3]: https://travis-ci.org/dreamerslab/node.extend.svg
 [4]: https://travis-ci.org/dreamerslab/node.extend
 [5]: https://david-dm.org/dreamerslab/node.extend.svg
