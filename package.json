@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "tape": "~3.0.0",
-    "covert": "~1.0.0",
+    "covert": "1.0.0",
     "jscs": "~1.6.2"
   },
   "repository": {
