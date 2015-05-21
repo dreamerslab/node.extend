@@ -56,15 +56,5 @@
       "iphone/6.0..latest"
     ]
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://en.wikipedia.org/wiki/MIT_License"
-    },
-    {
-      "type": "GPL",
-      "url": "http://en.wikipedia.org/wiki/GNU_General_Public_License"
-    }
-  ]
+  "license": "(MIT OR GPL)"
 }
-
