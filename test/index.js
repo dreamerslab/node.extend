@@ -36,7 +36,7 @@ test('missing arguments', function (t) {
   t.deepEqual(extend(true, { a: 1 }), { a: 1 }, 'deep: missing second argument is first argument');
   t.deepEqual(extend(), {}, 'no arguments is object');
   t.end();
-})
+});
 
 test('.version', function (t) {
   t.ok((/^\d+\.\d+\.\d+$/).test(extend.version), 'version is valid');
