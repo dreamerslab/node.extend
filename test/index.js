@@ -2,13 +2,13 @@ var extend = require('../lib/extend');
 var test = require('tape');
 
 var str = 'me a test';
-var int = 10;
+var integer = 10;
 var arr = [1, 'what', new Date(81, 8, 4)];
 var date = new Date(81, 4, 13);
 
 var obj = {
   str: str,
-  int: int,
+  integer: integer,
   arr: arr,
   date: date
 };
@@ -16,13 +16,13 @@ var obj = {
 var deep = {
   ori: obj,
   layer: {
-    int: 10,
+    integer: 10,
     str: 'str',
     date: new Date(84, 5, 12),
     arr: [101, 'dude', new Date(82, 10, 4)],
     deep: {
       str: obj.str,
-      int: int,
+      integer: integer,
       arr: obj.arr,
       date: new Date(81, 7, 4)
     }
@@ -106,7 +106,7 @@ test('merge string with obj', function (t) {
   t.equal(ori, 'what u gonna say', 'original string is unchanged');
   var testObj = {
     str: 'me a test',
-    int: 10,
+    integer: 10,
     arr: [1, 'what', new Date(81, 8, 4)],
     date: new Date(81, 4, 13)
   };
@@ -165,7 +165,7 @@ test('merge number with object', function (t) {
   var target = extend(20, obj);
   var testObj = {
     str: 'me a test',
-    int: 10,
+    integer: 10,
     arr: [1, 'what', new Date(81, 8, 4)],
     date: new Date(81, 4, 13)
   };
@@ -233,7 +233,7 @@ test('merge array with object', function (t) {
   var target = extend(ori, obj);
   var testObject = {
     str: 'me a test',
-    int: 10,
+    integer: 10,
     arr: [1, 'what', new Date(81, 8, 4)],
     date: new Date(81, 4, 13)
   };
@@ -241,13 +241,13 @@ test('merge array with object', function (t) {
   t.deepEqual(obj, testObject, 'obj is unchanged');
   t.equal(ori.length, 6, 'array has proper length');
   t.equal(ori.str, obj.str, 'array has obj.str property');
-  t.equal(ori.int, obj.int, 'array has obj.int property');
+  t.equal(ori.integer, obj.integer, 'array has obj.integer property');
   t.deepEqual(ori.arr, obj.arr, 'array has obj.arr property');
   t.equal(ori.date, obj.date, 'array has obj.date property');
 
   t.equal(target.length, 6, 'target has proper length');
   t.equal(target.str, obj.str, 'target has obj.str property');
-  t.equal(target.int, obj.int, 'target has obj.int property');
+  t.equal(target.integer, obj.integer, 'target has obj.integer property');
   t.deepEqual(target.arr, obj.arr, 'target has obj.arr property');
   t.equal(target.date, obj.date, 'target has obj.date property');
   t.end();
@@ -310,7 +310,7 @@ test('merge date with object', function (t) {
   var testDate = new Date(81, 8, 4);
   var testObject = {
     str: 'me a test',
-    int: 10,
+    integer: 10,
     arr: [1, 'what', testDate],
     date: new Date(81, 4, 13)
   };
@@ -325,7 +325,7 @@ test('merge object with string', function (t) {
   var testDate = new Date(81, 7, 26);
   var ori = {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: testDate
   };
@@ -341,7 +341,7 @@ test('merge object with string', function (t) {
     7: 's',
     8: 't',
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: testDate
   };
@@ -355,13 +355,13 @@ test('merge object with string', function (t) {
 test('merge object with number', function (t) {
   var ori = {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26)
   };
   var testObject = {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26)
   };
@@ -374,7 +374,7 @@ test('merge object with number', function (t) {
 test('merge object with array', function (t) {
   var ori = {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26)
   };
@@ -384,7 +384,7 @@ test('merge object with array', function (t) {
     1: 'what',
     2: new Date(81, 8, 4),
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26)
   };
@@ -398,14 +398,14 @@ test('merge object with array', function (t) {
 test('merge object with date', function (t) {
   var ori = {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26)
   };
   var target = extend(ori, date);
   var testObject = {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26)
   };
@@ -419,7 +419,7 @@ test('merge object with date', function (t) {
 test('merge object with object', function (t) {
   var ori = {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26),
     foo: 'bar'
@@ -427,13 +427,13 @@ test('merge object with object', function (t) {
   var target = extend(ori, obj);
   var expectedObj = {
     str: 'me a test',
-    int: 10,
+    integer: 10,
     arr: [1, 'what', new Date(81, 8, 4)],
     date: new Date(81, 4, 13)
   };
   var expectedTarget = {
     str: 'me a test',
-    int: 10,
+    integer: 10,
     arr: [1, 'what', new Date(81, 8, 4)],
     date: new Date(81, 4, 13),
     foo: 'bar'
@@ -448,12 +448,12 @@ test('merge object with object', function (t) {
 test('deep clone', function (t) {
   var ori = {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26),
     layer: {
       deep: {
-        int: 42
+        integer: 42
       }
     }
   };
@@ -461,23 +461,23 @@ test('deep clone', function (t) {
 
   t.deepEqual(ori, {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26),
     ori: {
       str: 'me a test',
-      int: 10,
+      integer: 10,
       arr: [1, 'what', new Date(81, 8, 4)],
       date: new Date(81, 4, 13)
     },
     layer: {
-      int: 10,
+      integer: 10,
       str: 'str',
       date: new Date(84, 5, 12),
       arr: [101, 'dude', new Date(82, 10, 4)],
       deep: {
         str: 'me a test',
-        int: 10,
+        integer: 10,
         arr: [1, 'what', new Date(81, 8, 4)],
         date: new Date(81, 7, 4)
       }
@@ -486,18 +486,18 @@ test('deep clone', function (t) {
   t.deepEqual(deep, {
     ori: {
       str: 'me a test',
-      int: 10,
+      integer: 10,
       arr: [1, 'what', new Date(81, 8, 4)],
       date: new Date(81, 4, 13)
     },
     layer: {
-      int: 10,
+      integer: 10,
       str: 'str',
       date: new Date(84, 5, 12),
       arr: [101, 'dude', new Date(82, 10, 4)],
       deep: {
         str: 'me a test',
-        int: 10,
+        integer: 10,
         arr: [1, 'what', new Date(81, 8, 4)],
         date: new Date(81, 7, 4)
       }
@@ -505,23 +505,23 @@ test('deep clone', function (t) {
   }, 'deep is unchanged');
   t.deepEqual(target, {
     str: 'no shit',
-    int: 76,
+    integer: 76,
     arr: [1, 2, 3, 4],
     date: new Date(81, 7, 26),
     ori: {
       str: 'me a test',
-      int: 10,
+      integer: 10,
       arr: [1, 'what', new Date(81, 8, 4)],
       date: new Date(81, 4, 13)
     },
     layer: {
-      int: 10,
+      integer: 10,
       str: 'str',
       date: new Date(84, 5, 12),
       arr: [101, 'dude', new Date(82, 10, 4)],
       deep: {
         str: 'me a test',
-        int: 10,
+        integer: 10,
         arr: [1, 'what', new Date(81, 8, 4)],
         date: new Date(81, 7, 4)
       }
@@ -532,18 +532,18 @@ test('deep clone', function (t) {
   t.deepEqual(deep, {
     ori: {
       str: 'me a test',
-      int: 10,
+      integer: 10,
       arr: [1, 'what', new Date(81, 8, 4)],
       date: new Date(81, 4, 13)
     },
     layer: {
-      int: 10,
+      integer: 10,
       str: 'str',
       date: new Date(84, 5, 12),
       arr: [101, 'dude', new Date(82, 10, 4)],
       deep: {
         str: 'me a test',
-        int: 10,
+        integer: 10,
         arr: [1, 'what', new Date(81, 8, 4)],
         date: new Date(81, 7, 4)
       }
