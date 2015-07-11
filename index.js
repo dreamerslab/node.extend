@@ -1,2 +1,3 @@
-module.exports = require('./lib/extend');
+'use strict';
 
+module.exports = require('./lib/extend');
