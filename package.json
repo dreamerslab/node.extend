@@ -40,9 +40,9 @@
     "jscs": "jscs *.js */*.js",
     "eslint": "eslint *.js */*.js"
   },
-  "engines": [
-    "node >= 0.4"
-  ],
+  "engines": {
+    "node": ">=0.4.0"
+  },
   "testling": {
     "files": "test/index.js",
     "browsers": [
