@@ -116,6 +116,10 @@
 
 	"requirePaddingNewLinesAfterUseStrict": true,
 
-	"disallowArrowFunctions": true
+	"disallowArrowFunctions": true,
+
+	"disallowMultiLineTernary": true,
+
+	"validateOrderInObjectKeys": false
 }
 
