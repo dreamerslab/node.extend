@@ -40,11 +40,6 @@ test('missing arguments', function (t) {
   t.end();
 });
 
-test('.version', function (t) {
-  t.ok((/^\d+\.\d+\.\d+$/).test(extend.version), 'version is valid');
-  t.end();
-});
-
 test('merge string with string', function (t) {
   var ori = 'what u gonna say';
   var target = extend(ori, str);
