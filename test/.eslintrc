@@ -1,6 +1,7 @@
 {
 	"rules": {
 		"max-lines": 0,
+		"max-lines-per-function": 0,
 		"no-magic-numbers": 0,
 		"object-curly-newline": 0
 	}
