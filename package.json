@@ -12,7 +12,8 @@
   ],
   "author": "dreamerslab <ben@dreamerslab.com>",
   "dependencies": {
-    "is": "^3.1.0"
+    "has": "^1.0.3",
+    "is": "^3.2.1"
   },
   "devDependencies": {
     "@ljharb/eslint-config": "^13.0.0",
