@@ -1,6 +1,6 @@
 {
   "name": "node.extend",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A port of jQuery.extend that actually works on node.js",
   "keywords": [
     "extend",
