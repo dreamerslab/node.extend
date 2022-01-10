@@ -20,9 +20,11 @@
     "aud": "^1.1.5",
     "eslint": "^8.6.0",
     "in-publish": "^2.0.1",
+    "is-date-object": "^1.0.5",
     "nyc": "^10.3.2",
+    "object.assign": "^4.1.2",
     "safe-publish-latest": "^2.0.0",
-    "tape": "^4.14.0"
+    "tape": "^5.4.0"
   },
   "repository": {
     "type": "git",

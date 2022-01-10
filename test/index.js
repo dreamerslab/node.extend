@@ -2,6 +2,8 @@
 
 var extend = require('../lib/extend');
 var test = require('tape');
+var isDate = require('is-date-object');
+var assign = require('object.assign');
 
 var str = 'me a test';
 var integer = 10;
@@ -92,7 +94,8 @@ test('merge string with date', function (t) {
   var testDate = new Date(81, 4, 13);
   t.equal(ori, 'what u gonna say', 'original string is unchanged');
   t.deepEqual(date, testDate, 'date is unchanged');
-  t.deepEqual(target, testDate, 'string + date is date');
+  t.deepEqual(assign({}, target), assign({}, testDate), 'string + date has no properties');
+  t.notOk(isDate(target), 'string + date is not a Date');
   t.end();
 });
 
@@ -118,17 +121,21 @@ test('merge number with string', function (t) {
 
   t.equal(ori, 20, 'number is unchanged');
   t.equal(str, 'me a test', 'string is unchanged');
-  t.deepEqual(target, {
-    0: 'm',
-    1: 'e',
-    2: ' ',
-    3: 'a',
-    4: ' ',
-    5: 't',
-    6: 'e',
-    7: 's',
-    8: 't'
-  }, 'number + string is object form of string');
+  t.deepEqual(
+    target,
+    {
+      0: 'm',
+      1: 'e',
+      2: ' ',
+      3: 'a',
+      4: ' ',
+      5: 't',
+      6: 'e',
+      7: 's',
+      8: 't'
+    },
+    'number + string is object form of string'
+  );
   t.end();
 });
 
@@ -154,7 +161,8 @@ test('merge number with date', function (t) {
   var testDate = new Date(81, 4, 13);
 
   t.deepEqual(date, testDate, 'original date is unchanged');
-  t.deepEqual(target, testDate, 'number + date is date');
+  t.deepEqual(assign({}, target), assign({}, testDate), 'target has same properties as Date');
+  t.notOk(isDate(target), 'number + date is not a Date');
   t.end();
 });
 
@@ -178,17 +186,11 @@ test('merge array with string', function (t) {
 
   t.deepEqual(ori, str.split(''), 'array is changed to be an array of string chars');
   t.equal(str, 'me a test', 'string is unchanged');
-  t.deepEqual(target, {
-    0: 'm',
-    1: 'e',
-    2: ' ',
-    3: 'a',
-    4: ' ',
-    5: 't',
-    6: 'e',
-    7: 's',
-    8: 't'
-  }, 'array + string is object form of string');
+  t.deepEqual(
+    target,
+    ['m', 'e', ' ', 'a', ' ', 't', 'e', 's', 't'],
+    'array + string is array of string chars'
+  );
   t.end();
 });
 
@@ -265,9 +267,10 @@ test('merge date with string', function (t) {
     8: 't'
   };
 
-  t.deepEqual(ori, testObject, 'date is changed to object form of string');
+  t.deepEqual(assign({}, ori), testObject, 'date has same properties as object form of string');
   t.equal(str, 'me a test', 'string is unchanged');
-  t.deepEqual(target, testObject, 'date + string is object form of string');
+  t.ok(isDate(target), 'date + string is a Date');
+  t.deepEqual(assign({}, target), testObject, 'date + string is object form of string');
   t.end();
 });
 
@@ -275,8 +278,8 @@ test('merge date with number', function (t) {
   var ori = new Date(81, 9, 20);
   var target = extend(ori, 10);
 
-  t.deepEqual(ori, {}, 'date is changed to empty object');
-  t.deepEqual(target, {}, 'date + number is empty object');
+  t.deepEqual(assign({}, ori), {}, 'date is changed to have no properties');
+  t.deepEqual(assign({}, target), {}, 'date + number has no properties');
   t.end();
 });
 
@@ -286,9 +289,9 @@ test('merge date with array', function (t) {
   var testDate = new Date(81, 9, 20);
   var testArray = [1, 'what', new Date(81, 8, 4)];
 
-  t.deepEqual(ori, testDate, 'date is unchanged');
+  t.deepEqual(new Date(ori), new Date(testDate), 'date data is unchanged');
   t.deepEqual(arr, testArray, 'array is unchanged');
-  t.deepEqual(target, testDate, 'date + array is date');
+  t.equal(isDate(target), isDate(testDate), 'date + array is date');
   t.end();
 });
 
@@ -296,8 +299,8 @@ test('merge date with date', function (t) {
   var ori = new Date(81, 9, 20);
   var target = extend(ori, date);
 
-  t.deepEqual(ori, {}, 'date is empty object');
-  t.deepEqual(target, {}, 'date + date is empty object');
+  t.deepEqual(assign({}, ori), {}, 'date has no properties');
+  t.deepEqual(assign({}, target), {}, 'date + date is empty object');
   t.end();
 });
 
@@ -313,8 +316,10 @@ test('merge date with object', function (t) {
   };
 
   t.deepEqual(obj, testObject, 'original object is unchanged');
-  t.deepEqual(ori, testObject, 'date becomes original object');
-  t.deepEqual(target, testObject, 'date + object is object');
+  t.deepEqual(assign({}, ori), assign({}, testObject), 'extended date has same properties as original object');
+  t.equal(isDate(target), isDate(ori), 'original and target are both Dates');
+  t.deepEqual(assign({}, target), assign({}, testObject), 'date + object has same properties as original object');
+
   t.end();
 });
 
