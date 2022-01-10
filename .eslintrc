@@ -16,5 +16,5 @@
 		"no-restricted-syntax": [2, "BreakStatement", "DebuggerStatement", "LabeledStatement", "WithStatement"],
 		"sort-keys": 0,
 		"spaced-comment": [1, "always", { "markers": ["*"] }]
-	}
+	},
 }

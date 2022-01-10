@@ -16,12 +16,13 @@
     "is": "^3.2.1"
   },
   "devDependencies": {
-    "@ljharb/eslint-config": "^13.0.0",
-    "covert": "^1.1.0",
-    "eslint": "^5.8.0",
-    "jscs": "^3.0.7",
-    "safe-publish-latest": "^1.1.2",
-    "tape": "^4.9.1"
+    "@ljharb/eslint-config": "^20.1.0",
+    "aud": "^1.1.5",
+    "eslint": "^8.6.0",
+    "in-publish": "^2.0.1",
+    "nyc": "^10.3.2",
+    "safe-publish-latest": "^2.0.0",
+    "tape": "^4.14.0"
   },
   "repository": {
     "type": "git",
@@ -35,16 +36,13 @@
   ],
   "main": "index",
   "scripts": {
-    "prepublish": "safe-publish-latest",
+    "prepublishOnly": "safe-publish-latest",
+    "prepublish": "not-in-publish || npm run prepublishOnly",
+    "lint": "eslint --ext=js,mjs .",
     "pretest": "npm run lint",
+    "tests-only": "nyc tape 'test/**/*.js'",
     "test": "npm run --silent tests-only",
-    "posttest": "npm run coverage-quiet",
-    "tests-only": "node test",
-    "coverage": "covert test/index.js",
-    "coverage-quiet": "covert test/index.js --quiet",
-    "lint": "npm run jscs && npm run eslint .",
-    "jscs": "jscs *.js */*.js",
-    "eslint": "eslint"
+    "posttest": "aud --production"
   },
   "engines": {
     "node": ">=0.4.0"
