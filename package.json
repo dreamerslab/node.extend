@@ -12,7 +12,7 @@
   ],
   "author": "dreamerslab <ben@dreamerslab.com>",
   "dependencies": {
-    "has": "^1.0.3",
+    "hasown": "^2.0.0",
     "is": "^3.3.0"
   },
   "devDependencies": {
