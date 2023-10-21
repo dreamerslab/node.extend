@@ -1,6 +1,6 @@
 'use strict';
 
-var extend = require('../lib/extend');
+var extend = require('../');
 var test = require('tape');
 var isDate = require('is-date-object');
 var assign = require('object.assign');
