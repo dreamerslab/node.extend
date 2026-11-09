@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@ljharb/eslint-config": "^22.2.5",
+    "auto-changelog": "^2.7.0",
     "eslint": "^8.57.1",
     "in-publish": "^2.0.1",
     "is-date-object": "^1.1.0",
@@ -47,27 +48,15 @@
     "pretest": "npm run lint",
     "tests-only": "nyc tape 'test/**/*.js'",
     "test": "npm run --silent tests-only",
-    "posttest": "npx npm@\">= 10.2\" audit --production"
+    "posttest": "npx npm@\">= 10.2\" audit --production",
+    "version": "auto-changelog && git add CHANGELOG.md",
+    "postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
   },
   "engines": {
     "node": ">=0.4.0"
   },
   "testling": {
-    "files": "test/index.js",
-    "browsers": [
-      "iexplore/6.0..latest",
-      "firefox/3.0..6.0",
-      "firefox/15.0..latest",
-      "firefox/nightly",
-      "chrome/4.0..10.0",
-      "chrome/20.0..latest",
-      "chrome/canary",
-      "opera/10.0..latest",
-      "opera/next",
-      "safari/4.0..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest"
-    ]
+    "files": "test/index.js"
   },
   "license": "(MIT OR GPL-2.0)",
   "publishConfig": {
@@ -75,5 +64,14 @@
       ".github/workflows",
       "test"
     ]
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": false,
+    "commitLimit": false,
+    "backfillLimit": false,
+    "hideCredit": true,
+    "startingVersion": "1.0.2"
   }
 }
