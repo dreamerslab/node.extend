@@ -13,6 +13,7 @@ export default [
       'array-bracket-newline': 'off',
       complexity: 'off',
       eqeqeq: ['error', 'allow-null'],
+      'func-style': ['error', 'declaration'],
       indent: ['error', 2],
       'max-depth': ['error', 5],
       'max-params': ['error', 3],
