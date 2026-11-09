@@ -16,15 +16,15 @@
     "is": "^3.3.0"
   },
   "devDependencies": {
-    "@ljharb/eslint-config": "^21.1.0",
-    "eslint": "=8.8.0",
+    "@ljharb/eslint-config": "^22.2.5",
+    "eslint": "^8.57.1",
     "in-publish": "^2.0.1",
-    "is-date-object": "^1.0.5",
-    "npmignore": "^0.3.0",
+    "is-date-object": "^1.1.0",
+    "npmignore": "^0.3.6",
     "nyc": "^10.3.2",
-    "object.assign": "^4.1.4",
+    "object.assign": "^4.1.7",
     "safe-publish-latest": "^2.0.0",
-    "tape": "^5.7.2"
+    "tape": "^5.10.3"
   },
   "repository": {
     "type": "git",
