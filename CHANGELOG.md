@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.4](https://github.com/dreamerslab/node.extend/compare/v2.0.3...v2.0.4) - 2026-11-09
+
+### Commits
+
+- [meta] use `auto-changelog` [`04ac6b7`](https://github.com/dreamerslab/node.extend/commit/04ac6b700eeb4d911dba2e63108d0b8ee3e78fd6)
+- [actions] update workflows [`9eaa129`](https://github.com/dreamerslab/node.extend/commit/9eaa12901143f0416ff78aa32ce1d4c4ca63eb3d)
+- [Refactor] inline/replace `is` usage [`351d145`](https://github.com/dreamerslab/node.extend/commit/351d1458480baa725c93ccaebd4e440f4c30af91)
+- [Refactor] use `define-data-property` and `gopd` [`76e49f4`](https://github.com/dreamerslab/node.extend/commit/76e49f4d5cb48ee9d4e145aa5f2a30cd48ddbb9f)
+- [Dev Deps] update `@ljharb/eslint-config`, `eslint`, `is-date-object`, `npmignore`, `object.assign`, `tape` [`b9b6c74`](https://github.com/dreamerslab/node.extend/commit/b9b6c746cfc365da101ebb0ef3db9be0c06fae4d)
+- [Deps] update `hasown`, `is` [`df13f54`](https://github.com/dreamerslab/node.extend/commit/df13f544fbc199a906fa0593b2f7e60fc5d68814)
+- [meta] use `npm audit` instead of `aud` [`29bae76`](https://github.com/dreamerslab/node.extend/commit/29bae762970cb79f566e1c547568ef30e049e160)
+
 ## [v2.0.3](https://github.com/dreamerslab/node.extend/compare/v2.0.2...v2.0.3) - 2023-10-21
 
 ### Fixed
