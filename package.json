@@ -18,11 +18,12 @@
   "devDependencies": {
     "@ljharb/eslint-config": "^22.2.5",
     "eslint": "^10.15.0",
+    "in-publish": "^2.0.1",
     "is-date-object": "^1.1.0",
     "jiti": "^0.0.0",
     "nyc": "^10.3.2",
     "object.assign": "^4.1.7",
-    "safe-publish-latest": "^1.1.2",
+    "safe-publish-latest": "^2.0.0",
     "tape": "^5.11.0"
   },
   "repository": {
@@ -37,7 +38,8 @@
   ],
   "main": "index",
   "scripts": {
-    "prepublish": "safe-publish-latest",
+    "prepublish": "not-in-publish || npm run prepublishOnly",
+    "prepublishOnly": "safe-publish-latest",
     "pretest": "npm run lint",
     "test": "npm run --silent tests-only",
     "posttest": "npx npm@\">= 10.2\" audit --production",
