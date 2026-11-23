@@ -16,9 +16,10 @@
     "is": "^3.2.1"
   },
   "devDependencies": {
-    "@ljharb/eslint-config": "^13.0.0",
+    "@ljharb/eslint-config": "^22.2.5",
     "covert": "^1.1.0",
-    "eslint": "^5.8.0",
+    "eslint": "^10.15.0",
+    "jiti": "^0.0.0",
     "safe-publish-latest": "^1.1.2",
     "tape": "^4.9.1"
   },
@@ -47,21 +48,7 @@
     "node": ">=0.4.0"
   },
   "testling": {
-    "files": "test/index.js",
-    "browsers": [
-      "iexplore/6.0..latest",
-      "firefox/3.0..6.0",
-      "firefox/15.0..latest",
-      "firefox/nightly",
-      "chrome/4.0..10.0",
-      "chrome/20.0..latest",
-      "chrome/canary",
-      "opera/10.0..latest",
-      "opera/next",
-      "safari/4.0..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest"
-    ]
+    "files": "test/index.js"
   },
   "license": "(MIT OR GPL-2.0)"
 }
