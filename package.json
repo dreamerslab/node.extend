@@ -17,11 +17,13 @@
   },
   "devDependencies": {
     "@ljharb/eslint-config": "^22.2.5",
-    "covert": "^1.1.0",
     "eslint": "^10.15.0",
+    "is-date-object": "^1.1.0",
     "jiti": "^0.0.0",
+    "nyc": "^10.3.2",
+    "object.assign": "^4.1.7",
     "safe-publish-latest": "^1.1.2",
-    "tape": "^4.9.1"
+    "tape": "^5.11.0"
   },
   "repository": {
     "type": "git",
@@ -38,10 +40,8 @@
     "prepublish": "safe-publish-latest",
     "pretest": "npm run lint",
     "test": "npm run --silent tests-only",
-    "posttest": "npm run coverage-quiet",
-    "tests-only": "node test",
-    "coverage": "covert test/index.js",
-    "coverage-quiet": "covert test/index.js --quiet",
+    "posttest": "npx npm@\">= 10.2\" audit --production",
+    "tests-only": "nyc node test",
     "lint": "eslint ."
   },
   "engines": {

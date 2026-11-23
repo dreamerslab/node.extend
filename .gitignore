@@ -9,3 +9,6 @@ coverage/
 npm-shrinkwrap.json
 package-lock.json
 yarn.lock
+
+.nyc_output/
+coverage/
