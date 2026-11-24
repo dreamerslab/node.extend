@@ -58,7 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape` [`17f78ad`](https://github.com/dreamerslab/node.extend/commit/17f78ad28b1ff909b6d5a431240f05c7de80ae7f)
 - Only apps should have lockfiles [`7dfcc3b`](https://github.com/dreamerslab/node.extend/commit/7dfcc3b61ab3137685b9ea9e1ac38fb196500981)
 
-## [v2.0.0](https://github.com/dreamerslab/node.extend/compare/v1.1.8...v2.0.0) - 2017-04-18
+## [v2.0.0](https://github.com/dreamerslab/node.extend/compare/v1.1.9...v2.0.0) - 2017-04-18
 
 ### Commits
 
@@ -66,6 +66,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Dev Deps] update `tape`, `eslint`, `@ljharb/eslint-config` [`5f0e1ee`](https://github.com/dreamerslab/node.extend/commit/5f0e1eefd7de525bcfdbf31cc214a8cdcdaa79d5)
 - [breaking] remove unnecessary version export [`b59257e`](https://github.com/dreamerslab/node.extend/commit/b59257e799b92f103546918fbfa530c1824db1e9)
 - [Deps] update `is` [`674596f`](https://github.com/dreamerslab/node.extend/commit/674596f59f9dd81158f2304241d9ed0a00db2034)
+
+## [v1.1.9](https://github.com/dreamerslab/node.extend/compare/v1.1.8...v1.1.9) - 2026-11-23
+
+### Commits
+
+- [meta] use `npmignore` and `auto-changelog`; add `.nycrc`, security policy, funding [`e3eb524`](https://github.com/dreamerslab/node.extend/commit/e3eb52473d46153b225699dcb6004853ce492c7f)
+- [Tests] migrate tests to Github Actions [`2fde2fc`](https://github.com/dreamerslab/node.extend/commit/2fde2fcd9e60c4b189ac3df3d2e0d0e4dc79d71e)
+- [Dev Deps] remove jscs [`b8c48b2`](https://github.com/dreamerslab/node.extend/commit/b8c48b275ced2abef7b7d108cbc605d6ae15a1ca)
+- [Dev Deps] update `eslint` [`17714a9`](https://github.com/dreamerslab/node.extend/commit/17714a94fbc0ae82e9d43caa6b5f9305bc38fffa)
+- [Dev Deps] update `tape`; use `nyc`; fix tests revealed to have been broken [`0683aa7`](https://github.com/dreamerslab/node.extend/commit/0683aa7889485797acf7f85bf0235143bda0e8ab)
+- [Refactor] inline/replace `is` usage [`b5c1994`](https://github.com/dreamerslab/node.extend/commit/b5c1994ac19278ffb1329959801cd0e2c929acba)
+- [Refactor] use `hasown` over `has` [`1a5781e`](https://github.com/dreamerslab/node.extend/commit/1a5781e2e2f9c992d49af28aba3c42a25ef9a389)
+- [Dev Deps] update `safe-publish-latest` [`5347ddc`](https://github.com/dreamerslab/node.extend/commit/5347ddcf203290881b596bfaf55ef8ae43674696)
 
 ## [v1.1.8](https://github.com/dreamerslab/node.extend/compare/v1.1.7...v1.1.8) - 2018-11-24
 

@@ -65,7 +65,7 @@
       ".github/workflows",
       ".nycrc",
       "eslint.config.mjs",
-      "test"
+      "test/"
     ]
   },
   "auto-changelog": {
