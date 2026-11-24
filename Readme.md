@@ -1,12 +1,13 @@
-# node.extend
+# node.extend <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
+
+[![github actions][actions-image]][actions-url]
+[![coverage][codecov-image]][codecov-url]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
+
+[![npm badge][npm-badge-png]][package-url]
 
 A port of jQuery.extend that **actually works** on node.js
-
-[![Build Status][travis-svg]][travis-url]
-[![dependency status][deps-svg]][deps-url]
-[![dev dependency status][dev-deps-svg]][dev-deps-url]
-
-[![browser support][testling-png]][testling-url]
 
 
 ## Description
@@ -64,14 +65,17 @@ Copyright 2011, John Resig
 Dual licensed under the MIT or GPL Version 2 licenses.
 http://jquery.org/license
 
-[testling-png]: https://ci.testling.com/dreamerslab/node.extend.png
-[testling-url]: https://ci.testling.com/dreamerslab/node.extend
-[travis-svg]: https://travis-ci.org/dreamerslab/node.extend.svg
-[travis-url]: https://travis-ci.org/dreamerslab/node.extend
-[deps-svg]: https://david-dm.org/dreamerslab/node.extend.svg
-[deps-url]: https://david-dm.org/dreamerslab/node.extend
-[dev-deps-svg]: https://david-dm.org/dreamerslab/node.extend/dev-status.svg
-[dev-deps-url]: https://david-dm.org/dreamerslab/node.extend#info=devDependencies
+[package-url]: https://npmjs.org/package/node.extend
+[npm-version-svg]: https://versionbadg.es/dreamerslab/node.extend.svg
+[npm-badge-png]: https://nodei.co/npm/node.extend.png?downloads=true&stars=true
+[license-image]: https://img.shields.io/npm/l/node.extend.svg
+[license-url]: LICENSE
+[downloads-image]: https://img.shields.io/npm/dm/node.extend.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=node.extend
+[codecov-image]: https://codecov.io/gh/dreamerslab/node.extend/branch/master/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/dreamerslab/node.extend/
+[actions-image]: https://img.shields.io/github/check-runs/dreamerslab/node.extend/master
+[actions-url]: https://github.com/dreamerslab/node.extend/actions
 [jQuery]: http://api.jquery.com/jQuery.extend/
 [@ljharb]: https://twitter.com/ljharb
 
